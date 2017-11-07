@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="//fonts.googlrapis.com/css?family=Kaushan+Script" rel="stylesheeets">
   </head>
 
   <body>
@@ -33,8 +34,26 @@
     
     <br class="clear" />
     
+    <div class="container>"
+    
     <%= yield %>
     
+    </div>
+      
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            
+            Proudly hacked in Boston, MA by <a href="http://thefirehoseproject.com">Alex</a><br />
+            Want to build your own Splurty Web App - <a href="thefirehoseproject.com">Learn how to code here</a>
+          </div>
+        </div>
+      </div>
+    </div>
     
   </body>
 </html>
